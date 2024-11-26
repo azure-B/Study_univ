@@ -51,6 +51,10 @@ ul > li {
 .Git_Box {
     height: 33vh;
     width: 80%;
+    background-color: white;
+    color: blue;
+
+    flex-direction: column;
 }
 
 .Code_Box {
@@ -86,4 +90,9 @@ ul > li {
 
 .Comu_Lang {
     display: none;
+}
+
+.Git_Icon {
+    height: 5vh;
+    width: auto;
 }
