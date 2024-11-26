@@ -57,9 +57,11 @@ ul > li {
     flex-direction: column;
 }
 
-.Code_Box {
+.Now {
     height: 53vh;
     width: 80%;
+
+    flex-direction: column;
 }
 
 .My_Int {
