@@ -49,12 +49,12 @@ ul > li {
 }
 
 .Git_Box {
+
     height: 33vh;
     width: 80%;
     background-color: white;
     color: blue;
 
-    flex-direction: column;
 }
 
 .Now {
@@ -67,6 +67,9 @@ ul > li {
 .My_Int {
     height: 48vh;
     width: 80%;
+
+    box-shadow: inset 0 0 0 0 white;
+
 }
 
 .Lang {
@@ -74,11 +77,21 @@ ul > li {
     width: 80%;
 
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .Velogs {
     height: 43vh;
     width: 80%;
+
+    flex-direction: column;
+}
+
+.Velogs > div {
+
+    padding: 2vh;
+    height: 20%;
+
 }
 
 .My_Job {
@@ -97,4 +110,15 @@ ul > li {
 .Git_Icon {
     height: 5vh;
     width: auto;
+}
+
+.Git_Box > ul > a > img {
+    height: 10vh;
+    padding: 2vh;
+}
+
+.My_Int > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
