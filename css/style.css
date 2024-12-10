@@ -1,124 +1,168 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-body {
-    background-color: #080613;
-    color: white;
+    box-sizing: border-box;
 }
 
 div {
-    overflow: hidden;
+    border-radius: 1vh;
 }
 
-ul {
-    list-style-type: none;
-    flex-direction: row;
-}
-
-ul > li {
-    padding: 2vw;
-}
-
-.Flex_Dis {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.Border_Rad {
-    border-radius: 5vh;
-    box-shadow: inset 0 0 1px 1px white;
-}
-
-.Main_Div {
-    display: flex;
+.body {
+    height: 100vh;
     width: 100vw;
-    height: 100vh;
-}
-
-.Main_Div > div {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    padding: 13vh 23vw;
+    background-color: black;
+}
+
+.body > div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-
-    height: 100vh;
     width: 100%;
+    height: auto;
 }
 
-.Git_Box {
+.body > div:nth-child(2) {
+    flex-grow: 2;
+}
 
-    height: 33vh;
-    width: 80%;
+.Container {
+    display: flex;
+}
+
+.Sample_background {
     background-color: white;
-    color: blue;
+}
+
+.Top {
+    height: 15vh;
+}
+
+.Top > div {
+
+    height: 15vh;
+    width: 10vw;
+    flex-grow: 1;
+    margin: 3vh;     
 
 }
 
-.Now {
-    height: 53vh;
-    width: 80%;
-
-    flex-direction: column;
+.Top > div:nth-child(1) {
 }
 
-.My_Int {
-    height: 48vh;
-    width: 80%;
-
-    box-shadow: inset 0 0 0 0 white;
-
-}
-
-.Lang {
-    height: 38vh;
-    width: 80%;
-
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.Velogs {
-    height: 43vh;
-    width: 80%;
-
-    flex-direction: column;
-}
-
-.Velogs > div {
-
-    padding: 2vh;
-    height: 20%;
-
-}
-
-.My_Job {
-    height: 43vh;
-    width: 80%;
-}
-
-.Lang_Button {
-
-}
-
-.Comu_Lang {
-    display: none;
-}
-
-.Git_Icon {
-    height: 5vh;
-    width: auto;
-}
-
-.Git_Box > ul > a > img {
-    height: 10vh;
-    padding: 2vh;
-}
-
-.My_Int > img {
+.Middle > div {
     height: 100%;
+    width: auto;
+    flex-grow: 1;
+    margin: 3vh;
+}
+
+.Middle > div:nth-child(2) {
+    flex-grow: 2;
+}
+
+.Bottom > div {
+    width: auto;
+    height: 15vh;
+    flex-grow: 1;
+    margin: 3vh;
+}
+
+.Bottom > div:nth-child(3) {
+    flex-grow: 2;
+}
+
+.Name_Div {
+    transition: transform 0.3s ease;
+    transform-origin: right bottom; 
+    position: relative;
+}
+
+.Name_Div:hover {
+    background-color: red;
+    transform: scaleX(1.8) scaleY(1.3);
+}
+
+.BU_Div {
+    transition: transform 0.3s ease;
+    transform-origin: left bottom; 
+    position: relative;
+}
+
+.BU_Div:hover {
+    background-color: red;
+    transform: scaleX(1.4) scaleY(1.3);
+}
+
+
+.Sample_Div {
+    transition: transform 0.3s ease;
+    transform-origin: right top; 
+    position: relative;
+}
+
+.Sample_Div:hover {
+    background-color: red;
+    transform: scaleX(1.4) scaleY(1.3);
+}
+
+.Sample2_Div {
+    transition: transform 0.3s ease;
+    transform-origin: left; 
+    position: relative;
+}
+
+.Sample2_Div:hover {
+    background-color: red;
+    transform: scaleX(1.4);
+}
+
+
+.Sample3_Div {
+    transition: transform 0.3s ease;
+    transform-origin: top; 
+    position: relative;
+}
+
+.Sample3_Div:hover {
+    background-color: red;
+    transform: scaleY(2.25);
+}
+
+.Top_Ani {
+    transition: transform 0.3s ease;
+    transform-origin: bottom; 
+    position: relative;
+}
+
+.Top_Ani:hover {
+    background-color: red;
+    transform: scaleY(1.6);
+}
+
+.Middle_Ani {
+    transition: transform 0.3s ease;
+    transform-origin: right; 
+    position: relative;
+}
+
+.Middle_Ani:hover {
+    background-color: red;
+    transform: scaleX(2);
+}
+
+.Middle_Middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.Middle_Middle > div{
     width: 100%;
-    object-fit: cover;
+    height: 45%;    
 }
