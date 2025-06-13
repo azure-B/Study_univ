@@ -4,165 +4,40 @@
     box-sizing: border-box;
 }
 
-div {
-    border-radius: 1vh;
+/* common class */
+.d-flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.max-width {
+    width: 100%;
+}
+
+/* Cementic class*/
+.header {
+    height: 10vh;
+    padding: 0 3vw 0 3vw;
 }
 
 .body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 13vh 23vw;
-    background-color: black;
-}
-
-.body > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: auto;
-}
-
-.body > div:nth-child(2) {
-    flex-grow: 2;
-}
-
-.Container {
-    display: flex;
-}
-
-.Sample_background {
-    background-color: white;
-}
-
-.Top {
-    height: 15vh;
-}
-
-.Top > div {
-
-    height: 15vh;
-    width: 10vw;
-    flex-grow: 1;
-    margin: 3vh;     
-
-}
-
-.Top > div:nth-child(1) {
-}
-
-.Middle > div {
     height: 100%;
-    width: auto;
-    flex-grow: 1;
-    margin: 3vh;
+    background-color:aqua
 }
 
-.Middle > div:nth-child(2) {
-    flex-grow: 2;
+/* detailed class */
+
+.sizing {
+    height: 100%;
 }
 
-.Bottom > div {
-    width: auto;
-    height: 15vh;
-    flex-grow: 1;
-    margin: 3vh;
-}
-
-.Bottom > div:nth-child(3) {
-    flex-grow: 2;
-}
-
-.Name_Div {
-    transition: transform 0.3s ease;
-    transform-origin: right bottom; 
-    position: relative;
-}
-
-.Name_Div:hover {
-    background-color: red;
-    transform: scaleX(1.8) scaleY(1.3);
-}
-
-.BU_Div {
-    transition: transform 0.3s ease;
-    transform-origin: left bottom; 
-    position: relative;
-}
-
-.BU_Div:hover {
-    background-color: red;
-    transform: scaleX(1.4) scaleY(1.3);
-}
-
-
-.Sample_Div {
-    transition: transform 0.3s ease;
-    transform-origin: right top; 
-    position: relative;
-}
-
-.Sample_Div:hover {
-    background-color: red;
-    transform: scaleX(1.4) scaleY(1.3);
-}
-
-.Sample2_Div {
-    transition: transform 0.3s ease;
-    transform-origin: left; 
-    position: relative;
-}
-
-.Sample2_Div:hover {
-    background-color: red;
-    transform: scaleX(1.4);
-}
-
-
-.Sample3_Div {
-    transition: transform 0.3s ease;
-    transform-origin: top; 
-    position: relative;
-}
-
-.Sample3_Div:hover {
-    background-color: red;
-    transform: scaleY(2.25);
-}
-
-.Top_Ani {
-    transition: transform 0.3s ease;
-    transform-origin: bottom; 
-    position: relative;
-}
-
-.Top_Ani:hover {
-    background-color: red;
-    transform: scaleY(1.6);
-}
-
-.Middle_Ani {
-    transition: transform 0.3s ease;
-    transform-origin: right; 
-    position: relative;
-}
-
-.Middle_Ani:hover {
-    background-color: red;
-    transform: scaleX(2);
-}
-
-.Middle_Middle{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-.Middle_Middle > div{
-    width: 100%;
-    height: 45%;    
+.icons {
+    height: 7vh;
 }
