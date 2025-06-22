@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure_B</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header max-width d-flex-between">
+            <div class="d-flex-center sizing">
+                <img src="./icons/Logo.png" class="icons">
+            </div>
+            <div class="menu_bar">
+                <i class="xi-xpressengine">
+                    <a href="./index.html">뒤로가기</a>
+                </i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="body d-flex-column max_width">
+
+            <div class="contents">
+
+                <div class="contents_img">
+                    <img id="img" class="Hello" src="./icons/Git_Icons.png">
+                </div>
+
+                <div class="contents_coment d-flex-column">
+                    
+                    <h2>이미지 바꾸어보기</h2>
+
+                    <div>
+                        현재 나누어 드린 코드를 보면 <br/>
+                        이미지의 이름표에 img가 선언되어 있어요! <br/>
+                        해당 이름표를 활용해서 이미지를 바꾸어 볼까요? <br/>
+                         <button onclick="hello_jquery()">이미지 바꾸기</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+            
+                앞에서는 Jquery를 이용해 css를 바꾸어 보았어요 <br/>
+                앞에선 글씨색만 바꾸었지만 여러분도 눈치채셨을거에요 다른 css도 바꿀수 있다는 걸 <br/>
+                다음에 한번 활용해보면 좋겠네요!!<br/><br/>
+
+                자 이제 본론으로 넘어와서 이미지를 바꾸어 볼텐데요. <br/>
+                먼저 무엇을 해야할까요? 먼저 생각해보시고 정답 보기를 눌러주세요!! <br/><br/>
+
+                <button id="button" onclick="check_result()"> 정답 보기 </button>
+                <div id="result"></div>
+
+                <br/><br/>
+
+                <div id="after" style="display: none;">
+                    네 먼저 이름표를 이용해 출석을 시켜야겠죠!! <br/>
+                    지금 사용해 볼 것은 <br/>
+                    $('').attr <br/>
+                    인데요! attr은 Html 태그 안의 요소들 src나 href 그리고 class 이름표까지 접근 할 수 있어요! <br/>
+                    이제 우리가 접근해볼 것은 img태그의 src인데 사용법은 css와 같답니다! <br/>
+                    $('').attr( '접근할 요소' , '값' )<br/>
+                    그렇다면 우리는 src에 접근해야하니 <br/>
+                    $('').attr( 'src', '값' ) <br/>
+                    으로 코드를 작성해야겠죠?? <br/><br/><br/>
+
+                    어렵지 않으셨다면 좋겠네요 ㅠㅠ<br/>
+                    만약 질문사항이 있으면 카톡으로 바로 남겨주세요!! <br/>
+                </div>
+
+
+                
+                
+                
+                
+                
+                <br/><br/><br/><br/><br/><br/>.
+
+            </div>
+        </div>    
+           
+
+    </section>
+
+    <script>
+        // $('#hello_jquery').css('color', 'red');
+        // 위 아래는 일단 무시하고 해당 코드만 봐주시면 되겠습니다 :D
+
+        const check_result = () => {
+            $('#result').text('이름표를 이용해 $("#img") 선언!')
+            $('#button').css('display','none');
+            $('#after').css('display','block');
+        };
+
+        const hello_jquery = () => {
+
+            $('#img').attr('src', './icons/velog_icon.png');
+
+        };
+    </script>
+</body>
+</html>

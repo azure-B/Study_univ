@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure_B</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header max-width d-flex-between">
+            <div class="d-flex-center sizing">
+                <img src="./icons/Logo.png" class="icons">
+            </div>
+            <div class="menu_bar">
+                <i class="xi-xpressengine">
+                    <a href="./index.html">뒤로가기</a>
+                </i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="body d-flex-column max_width">
+
+            <div class="contents">
+
+                <div class="contents_img">
+                    <img src="./icons/Univ.png">
+                </div>
+
+                <div class="contents_coment d-flex-column">
+                    
+                    <h2 id="hello_jquery">글씨색깔 바꾸어보기</h2>
+
+                    <div>
+                        현재 나누어 드린 코드를 보면 <br/>
+                        위의 제목의 이름표에 hello_jquery가 선언되어 있어요! <br/>
+                        해당 이름표를 활용해서 글씨 색깔을 바꾸어 볼까요? <br/>
+                         <button onclick="hello_jquery()">색깔 바꾸기</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="contents">
+            
+                우선 Jquery에서 이름표에 접근하는 방법을 알려드릴게요 <br/><br/>
+                $('#id')        <br/>
+                단 하나뿐인 이름표인 ID를 선택하여 줄 때는 $('')에 #이름 을 <br/><br/>
+
+                $('.class')     <br/>
+                여러명이 달 수 있는 이름인 class를 선택하여 줄 때는 $('')에 .이름 을 <br/><br/>
+
+                이 이름표를 가지고 Jquery를 이용해 글씨색을 바꾸어 줄텐데요 <br/>
+                우선 제목에 달려있는 hello_jquery를 활용하여 볼까요?? <br/><br/>
+
+                위의 설명과 같이 우선 이름표에 접근을 해보도록 하겠습니다! <br/>
+                $('#hello_jquery') <br/>
+                이렇게 이름표를 가지고 출석을 시켜주고나서 <br/><br/>
+
+                $('').css 를 사용하여 색깔을 바꾸어 줄거에요! <br/>
+                $('').css 는 어떻게 사용하냐! <br/><br/>
+
+                $('').css( '바꾸고싶은css' , '값' )<br/>
+                만약에 내가 display를 block으로 바꾸어보고 싶다면 <br/>
+                $('').css( 'display', 'block' ) 로 선언하여 주시면 됩니다! <br/><br/>
+                
+                그럼 글씨를 바꾸고 싶다면 <br/>
+                $('').css('color', '원하는색')<br/>
+                으로 선언하시면 되겠죠!?<br/>
+                
+                
+                
+                
+                
+                <br/><br/><br/><br/><br/><br/>.
+
+            </div>
+        </div>    
+           
+
+    </section>
+
+    <script>
+        // $('#hello_jquery').css('color', 'red');
+        // 위 아래는 일단 무시하고 해당 코드만 봐주시면 되겠습니다 :D
+
+        const hello_jquery = () => {
+
+            $('#hello_jquery').css('color', 'red');
+
+        };
+    </script>
+</body>
+</html>
