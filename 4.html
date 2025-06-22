@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure_B</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header max-width d-flex-between">
+            <div class="d-flex-center sizing">
+                <img src="./icons/Logo.png" class="icons">
+            </div>
+            <div class="menu_bar">
+                <i class="xi-xpressengine">
+                    <a href="./index.html">뒤로가기</a>
+                </i>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="body d-flex-column max_width">
+
+            <div class="contents">
+
+                <div class="contents_img">
+                    <img id="img" class="Hello" src="./icons/./velog_icon.png">
+                </div>
+
+                <div class="contents_coment d-flex-column">
+                    
+                    <h2>버튼을 이용해 동작시켜보기 </h2>
+
+                    <div>
+                        현재 나누어 드린 코드를 보면 <br/>
+                        항상 버튼을 누르면 동작을 하게 만들었었죠 ! <br/>
+                        이미지를 다시 한번 바꾸어 보면서 설명해드리도록 하겠습니다! <br/>
+                         <button onclick="hello_jquery()">이미지 바꾸기</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div>
+                
+                <div id="gone">
+                    자 다시한번 퀴즈를 드리겠습니다! <br/>
+                    먼저 무엇을 해야할까요? 정답 보기를 눌러주세요!! <br/><br/>
+                </div>
+
+                <button id="button" onclick="check_result()"> 정답 보기 </button>
+                <div id="result"></div>
+
+                <br/><br/>
+
+                <div id="after" style="display: none;">
+                    네 역시 먼저 이름표를 이용해 출석을 시켜야겠죠!! <br/>
+                    먼저 바꾸고 싶은 이미지의 이름표를 불러온 다음 <br/>
+                    버튼을 누를 때!! 동작을 시키는 것이 목표입니다. <br/><br/>
+
+                    버튼을 누를 때 동작을 시키는 방법은 여러가지이지만 <br/>
+                    우리 학교 수업시간에 배운 함수명으로 동작시키는 onclick을 먼저 배워볼거에요! <br/>
+                    &lt;button onclick="함수명"&gt;&lt;/button&gt; <br/>
+                    선언은 button태그안에 onclick="함수명" 이름표처럼 선언하여 주면 된답니다! <br/><br/>
+
+                    자 이제 함수를 만들어 볼 텐데요 2가지 방법이 있답니다 <br/><br/>
+
+                    let 함수명 ( props ) => { 동작 } <br/>
+                    function 함수명 ( props ){ 동작 } <br/><br/>
+
+                    props는 동작안에서 필요한 자료가 있다면 전달하여도 되고 없다면 공란으로 두어도 된답니다 <br/>
+                    수업시간에 다들 배우셨죠!? <br/>
+                    자 이제 본론으로 넘어가면 우리는 함수를 하나 선언해서 <br/>
+                    { }안의 동작으로 이미지를 바꾸어 볼거에요! <br/><br/>
+
+                    1. 함수를 먼저 선언하고 <br/>
+                    2. 앞의 이미지 바꾸기와 같이 이름표를 선언한 다음 <br/>
+                    3. 동작을 입력하면 끝이에요! <br/><br/>
+
+                    자 한번 같이 해볼까요!?
+                    
+                </div>
+
+
+                
+                
+                
+                
+                
+                <br/><br/><br/><br/><br/><br/>.
+
+            </div>
+        </div>    
+           
+
+    </section>
+
+    <script>
+
+        const check_result = () => {
+            $('#result').text('이름표를 이용해 $("#img") 선언!')
+            $('#button').css('display','none');
+            $('#gone').css('display','none');
+            $('#after').css('display','block');
+        };
+
+        // 무시하라고 했던 이 코드!!
+        // 여태 사용하였던 이 자식들이 모두 button에 들어가 동작을 시키는 것이었어요!
+        const hello_jquery = () => {
+
+            $('#img').attr('src', './icons/beackseok.png');
+
+        };
+    </script>
+</body>
+</html>
